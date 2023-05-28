@@ -320,8 +320,7 @@ subroutine analysis
 
       open(666,file=trim(adjustl(outdir))//"/Magnitude_KNEC.dat",&
               status='unknown',position='append')
-      write(666,"(13E18.9)") time, Magnitude_Gemini_ugriz,Magnitude_Gemini_JHKs
-      write(666,"(13E18.9)") Magnitude_CTIO_BVRIJHK,Magnitude_CTIO_ugrizY
+      write(666,"(26E18.9)") time, Magnitude_Gemini_ugriz,Magnitude_Gemini_JHKs,Magnitude_CTIO_BVRIJHK,Magnitude_CTIO_ugrizY
       close(666)
 
   endif

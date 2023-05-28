@@ -140,9 +140,7 @@ subroutine read_filter
 
     open(666,file=trim(adjustl(outdir))//"/Magnitude_KNEC.dat",&
             status='unknown',position='append')
-    linestring="time[s]  Gemini_u_g_r_i_z  Gemini_J_H_Ks"
-    write(666,*) linestring
-    linestring="CTIO_B_V_R_I_J_H_K  CTIO_u_g_r_i_z_Y"
+    linestring="time[s]  Gemini_u_g_r_i_z  Gemini_J_H_Ks CTIO_B_V_R_I_J_H_K  CTIO_u_g_r_i_z_Y"
     write(666,*) linestring
     close(666)
 
